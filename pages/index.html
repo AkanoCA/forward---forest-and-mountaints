@@ -4,451 +4,410 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ff057336-5844-4409-909c-8ac516f717da&lang=en_RU" >
-	</script>
-	
+
 	<!-- BEMGO:styles -->
 	<!-- BEMGO:symbol -->
 	<title>Document</title>
 </head>
 
 <body>
+	<!-- HEADER BLOCK-->
+	<header class="header" id="main">
 
+		<!-- <div class="mouse-parallax">
+				<div class="mouse-parallax__bg mouse-parallax__bg_couple"></div>
+				<div class="mouse-parallax__bg mouse-parallax__bg_forest"></div>
+				<div class="mouse-parallax__bg mouse-parallax__bg_mountains"></div>
+			</div> -->
 
+		<div class="container">
+			<div class="bar">
+				<div class="logo">
+					<svg class="logo__img">
+						<use xlink:href="@symbol#logo__logo"></use>
+					</svg>
+				</div>
+				<nav class="nav nav_header">
+					<div class="nav__wrap">
+						<a href="#main" class="nav__item">Главная</a>
+						<div class="nav__current"></div>
+					</div>
+					<div class="nav__wrap">
+						<a href="#tours" class="nav__item">Туры</a>
+						<div class="nav__current"></div>
+					</div>
+					<div class="nav__wrap">
+						<a href="#footer" class="nav__item">Заявка</a>
+						<div class="nav__current"></div>
+					</div>
+					<div class="nav__wrap">
+						<a href="#footer" class="nav__item">Контакты</a>
+						<div class="nav__current"></div>
+					</div>
+				</nav>
+				<div class="social">
+					<a href="https://vk.com/web_dispute" target="_blanck">
+						<svg class="social__img social__vk">
+							<use xlink:href="@symbol#social__vk"></use>
+						</svg>
+					</a>
+					<a href="#tg" target="_blanck">
+						<svg class="social__img social__tg">
+							<use xlink:href="@symbol#social__telegram"></use>
+						</svg>
+					</a>
+					<a href="#inst" target="_blanck">
+						<svg class="social__img social__inst">
+							<use xlink:href="@symbol#social__instagram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<div class="request request_pos">
+				<h1 class="request__title">Романтические
+					туры в горы</h1>
+				<p class="request__text">Лучше гор могут быть только
+					горы с любимым человеком</p>
+
+					<input type="submit" class="button button_pos" value="Оставить заявку">
+			</div>
+		</div>
+		</div>
+
+	</header>
 	<main>
-		<!-- HOME -->
-		<div class="home block block__theme_home" id="home">
+		<div class="block-price">
 			<div class="container">
-				<div class="menu">
-					<div class="logo">
-						<a href="#">
-							<svg class="logo__img">
-								<use xlink:href="#logo__logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="nav">
-						<div class="nav__item nav__item_current_home"><a href="#home" class="nav__link">Home</a></div>
-						<div class="nav__item"><a href="#services" class="nav__link">Services</a></div>
-						<div class="nav__item"><a href="#about" class="nav__link">About</a></div>
-						<div class="nav__item"><a href="#work" class="nav__link">Work</a></div>
-						<div class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
+				<h1 class="block-price__title">Подберите свой тип поездки</h1>
 
-		<!-- OUR SERVICES -->
-		<div class="services block block__theme_services" id="services">
-			<div class="container">
-				<div class="menu">
-					<div class="logo">
-						<a href="#">
-							<svg class="logo__img">
-								<use xlink:href="#logo__logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="nav">
-						<div class="nav__item"><a href="#home" class="nav__link">Home</a></div>
-						<div class="nav__item nav__item_current_services"><a href="#services"
-								class="nav__link">Services</a></div>
-						<div class="nav__item"><a href="#about" class="nav__link">About</a></div>
-						<div class="nav__item"><a href="#workd" class="nav__link">Work</a></div>
-						<div class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></div>
-					</div>
-				</div>
+				<div class="cards" id="tours">
 
-				<div class="description description_services">
-					<h1 class="description__title">OUR SERVICES</h1>
-					<h2 class="description__subtitle description__subtitle_pos">Lorem, ipsum <span
-							class="description__subtitle_accent">dolor.</span> sit amet consectetur adipisicing elit.
-						Quod, minima!</h2>
-					<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum
-						quis
-						sapiente, suscipit earum illo. Corrupti ad reprehenderit voluptate! Asperiores temporibus
-						similique sapiente dolorum in.Asperiores temporibus similique sapiente dolorum in.</p>
-				</div>
+					<!-- CARD #1 -->
+					<div class="card card__premium">
+						<div class="card__bar">
+							<span class="card__title card__title_l">Премиум</span>
+							<span class="card__title card__price"><span class="card__price-value" >12 000</span> &#x20bd/сутки </span>
+						</div>
 
-				<div class="services__opportunities services__opportunities_pos">
+						<img class="card__img" src="@card/premium.jpg" alt="Премиум">
 
-					<div class="services__serv">
-						<div class="services__wrap">
-							<svg class="services__img">
-								<use xlink:href="#services__lightball"></use>
-							</svg>
-							<h3 class="services__title services__title_pos">RESEARCHING</h3>
-							<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo
-								omnis aliquam? Tempora, facere quos?</p>
-						</div>
-					</div>
-					<div class="services__serv">
-						<div class="services__wrap">
-							<svg class="services__img">
-								<use xlink:href="#services__wand"></use>
-							</svg>
-							<h3 class="services__title services__title_pos">DESGN</h3>
-							<p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-								nisi quidem? Non natus dolores doloribus!</p>
-						</div>
-					</div>
-					<div class="services__serv">
-						<div class="services__wrap">
-							<svg class="services__img">
-								<use xlink:href="#services__giars"></use>
-							</svg>
-							<h3 class="services__title services__title_pos">DEVELOPMENT</h3>
-							<p class="services__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-								laborum amet nemo sed aliquid eligendi.</p>
-						</div>
-					</div>
-					<div class="services__serv">
-						<div class="services__wrap">
-							<svg class="services__img">
-								<use xlink:href="#services__rocket"></use>
-							</svg>
-							<h3 class="services__title services__title_pos">LAUNCH</h3>
-							<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-								repudiandae architecto deleniti voluptatem rerum impedit.</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			
-		</div>
-
-		<!-- ABOUT -->
-		<div class="block block_about block__theme_we-are" id="about">
-			<div class="container">
-				<div class="menu">
-					<div class="logo">
-						<a href="#">
-							<svg class="logo__img">
-								<use xlink:href="#logo__logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="nav">
-						<div class="nav__item"><a href="#home" class="nav__link">Home</a></div>
-						<div class="nav__item"><a href="#services" class="nav__link">Services</a></div>
-						<div class="nav__item nav__item_current_about"><a href="#about" class="nav__link">About</a>
-						</div>
-						<div class="nav__item"><a href="#workd" class="nav__link">Work</a></div>
-						<div class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></div>
-					</div>
-				</div>
-
-				<div class="description description_pos">
-					<h1 class="description__title description__title_pos">WHO WE ARE & WHAR WE DO</h1>
-					<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum
-						quis
-						sapiente, suscipit earum illo. Corrupti ad reprehenderit voluptate! Asperiores temporibus
-						similique sapiente dolorum in.Asperiores temporibus similique sapiente dolorum in.</p>
-				</div>
-
-				<div class="balloon balloon_pos">Meet the team</div>
-
-				<div class="team">
-					<div class="team__teammate">
-						<svg class="team__img">
-							<use xlink:href="@symbol#team__user"></use>
-						</svg>
-						<span class="team__name">Anton Petrov</span>
-						<team__span class="team__profession">General manager</team__span>
-						<div class="team__contacts">
-							<a href="#" class="team__link">
-								<svg class="team__fb">
-									<use xlink:href="@symbol#team__facebook"></use>
+						<div class="card__advantages">
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__house"></use>
 								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__tw">
-									<use xlink:href="@symbol#team__twit"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__gl">
-									<use xlink:href="@symbol#team__google"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__in">
-									<use xlink:href="@symbol#team__lin"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="team__teammate">
-						<svg class="team__img">
-							<use xlink:href="@symbol#team__user"></use>
-						</svg>
-						<span class="team__name">Kirl Donchev</span>
-						<team__span class="team__profession">Design Master</team__span>
-						<div class="team__contacts">
-							<a href="#" class="team__link">
-								<svg class="team__fb">
-									<use xlink:href="@symbol#team__facebook"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__tw">
-									<use xlink:href="@symbol#team__twit"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__gl">
-									<use xlink:href="@symbol#team__google"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__in">
-									<use xlink:href="@symbol#team__lin"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="team__teammate">
-						<svg class="team__img">
-							<use xlink:href="@symbol#team__user"></use>
-						</svg>
-						<span class="team__name">ilian Bonev</span>
-						<team__span class="team__profession">Developer Ninja</team__span>
-						<div class="team__contacts">
-							<a href="#" class="team__link">
-								<svg class="team__fb">
-									<use xlink:href="@symbol#team__facebook"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__tw">
-									<use xlink:href="@symbol#team__twit"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__gl">
-									<use xlink:href="@symbol#team__google"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__in">
-									<use xlink:href="@symbol#team__lin"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="team__teammate">
-						<svg class="team__img">
-							<use xlink:href="@symbol#team__user"></use>
-						</svg>
-						<span class="team__name">Doni Stamov</span>
-						<team__span class="team__profession">SEO guru</team__span>
-						<div class="team__contacts">
-							<a href="#" class="team__link">
-								<svg class="team__fb">
-									<use xlink:href="@symbol#team__facebook"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__tw">
-									<use xlink:href="@symbol#team__twit"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__gl">
-									<use xlink:href="@symbol#team__google"></use>
-								</svg>
-							</a>
-							<a href="#" class="team__link">
-								<svg class="team__in">
-									<use xlink:href="@symbol#team__lin"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		</div>
-
-		<!-- WORK -->
-		<div class="block block_work block__theme_work" id="work">
-			<div class="container">
-				<div class="menu">
-					<div class="logo">
-						<a href="#">
-							<svg class="logo__img">
-								<use xlink:href="#logo__logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="nav">
-						<div class="nav__item"><a href="#home" class="nav__link">Home</a></div>
-						<div class="nav__item"><a href="#services" class="nav__link">Services</a></div>
-						<div class="nav__item"><a href="#about" class="nav__link">About</a>
-						</div>
-						<div class="nav__item nav__item_current_work"><a href="#workd" class="nav__link">Work</a></div>
-						<div class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></div>
-					</div>
-				</div>
-
-				<div class="description description_pos">
-					<h1 class="description__title description__title_pos">our work</h1>
-					<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ratione cupiditate! Voluptatum, placeat, eveniet sapiente excepturi, dolorem explicabo et doloribus mollitia quibusdam natus quia earum corporis corrupti pariatur dolor. Eaque?</p>
-				</div>
-				
-				<div class="filter filter_pos">
-					<div class="filter__name">Portfolio</div>
-					<div class="filter__categories">
-						<div class="filter__category">All</div>
-						<div class="filter__category filter__category_current">Photography</div>
-						<div class="filter__category">Logo design</div>
-						<div class="filter__category">Web design</div>
-					</div>
-				</div>
-
-				<div class="portfolio portfolio_pos">
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">Aenean a elit</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">aliquam</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">suspendisse libero</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">maecenas fringilla</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">donec vehicula</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">ut et sapien</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">quis malesuada</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-					<div class="portfolio__box">
-						<img src="@portfolio/way.png" alt="" class="portfolio__img">
-						<div class="portfolio__name">vestibulum ante</div>
-						<div class="portfolio__plus">
-							<img src="@portfolio/plus.png" ></img>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-
-		<!-- CONTACT -->
-		<div class="block block_contact block__theme_contact" id="contacts">
-			<div class="container">
-				<div class="menu">
-					<div class="logo">
-						<a href="#">
-							<svg class="logo__img">
-								<use xlink:href="#logo__logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="nav nav_contact">
-						<div class="nav__item"><a href="#home" class="nav__link">Home</a></div>
-						<div class="nav__item"><a href="#services" class="nav__link">Services</a></div>
-						<div class="nav__item"><a href="#about" class="nav__link">About</a>
-						</div>
-						<div class="nav__item"><a href="#workd" class="nav__link">Work</a></div>
-						<div class="nav__item nav__item_current_contact"><a href="#contacts" class="nav__link">Contacts</a></div>
-					</div>
-				</div>
-
-				<div class="description description_pos">
-					<h1 class="description__title description__title_pos">Contact us</h1>
-					<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum
-						quis
-						sapiente, suscipit earum illo. Corrupti ad reprehenderit voluptate! Asperiores temporibus
-						similique sapiente dolorum in.Asperiores temporibus similique sapiente dolorum in.</p>
-				</div>
-
-				<div class="contact contact_pos">
-					<div class="address address_pos">
-						<div class="address__info">
-							<span class="address__title">Address</span>
-							<span class="address__subtitle">Acrostia</span>
-							<div class="address__street">
-								<span class="address__text">Sevenoaks Rd</span>
-								<span class="address__text">Sevenoaks TN14 7HR, UK</span>
+								<span class="card__text">5-звёздочная гостиница</span>
 							</div>
-							<div class="address__table">
-									<span class="address__col-1">Phone:</span>
-									<span class="address__col-2"><a class="address__phone" href="tel:+44 555 555 555">+44 555 555 555</a></span>
-
-									<span class="address__col-1">Fax:</span>
-									<span class="address__col-2"><a class="address__phone" href="fax:+44 556  555 555">+44 556  555 555</a></span>
-
-									<span class="address__col-1">E-mail:</span>
-									<span class="address__col-2"><a class="address__email" href="mailto:info@acrostia.com">info@acrostia.com</a></span>
-
-									<span class="address__col-1">Skype:</span>
-									<span class="address__col-2"><a class="address__skype" href="skype:Ac0stia?call">Ac0stia</a></span>
-								
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__cutlery"></use>
+								</svg>
+								<span class="card__text">Всё включено</span>
 							</div>
-						</div>
-			
-						<div id="map" class="address__map"></div>
-						
-						
+							<div class="card__item">
+								<svg class="card__svg card__svg_special">
+									<use xlink:href="@symbol#card__bus"></use>
+								</svg>
+								<span class="card__text">Комфортабельный минивен</span>
+							</div>
 
+						</div>
+
+						<form>
+							<div class="card__choice-mount">
+								<span class="card__subtitle">Выбеоите горы</span>
+
+								<label class="card__check">
+									<input class="card__radio card__altai" type="radio" name="mount">
+									<span class="card__mount-name">Алтайские горы, Горно-Алтайск</span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__swed" type="radio" name="mount" checked>
+									<span class="card__mount-name">Швейцарские Альпы, Кран-Монтана </span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__china" type="radio" name="mount">
+									<span class="card__mount-name">Китайские Гималаи, Тибет</span>
+								</label>
+							</div>
+
+							<div class="card__days">
+								<div class="card__day">
+									<span class="card__subtitle">Количество дней</span>
+									<div class="card__day-value">
+										<div class="card__change card__minus card__change_unactive">&minus;</div>
+										<input name="days" type="text" class="card__value" value="1" readonly />
+										<div class="card__change card__plus">&plus;</div>
+									</div>
+									<input type="submit" class="button button_mount-form" value="Оставить заявку">
+
+								</div>
+
+							</div>
+						</form>
 					</div>
-					<div class="ask-form ask-form_pos">
-						<span class="ask-form__title">Ask a question</span>
-						
-							<form class="form form_pos" action="#" name="question">
-								<input type="text" name="name" placeholder="Name" class="form__input" />
-								<input type="text" name="surname" placeholder="Surname" class="form__input" />
-								<textarea class="form__input form__input_question" name="question" placeholder="Your question"></textarea>
-							</form>
-						
+
+					<!-- CARD #2 -->
+					<div class="card card__comfort">
+						<div class="card__bar">
+							<span class="card__title card__title_l">Комфорт</span>
+							<span class="card__title card__price"><span class="card__price-value">5 000</span> &#x20bd/сутки </span>
+						</div>
+
+						<img class="card__img" src="@card/comfort.png" alt="Премиум">
+
+						<div class="card__advantages">
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__house"></use>
+								</svg>
+								<span class="card__text">Высокогорный мини-отель</span>
+							</div>
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__cutlery"></use>
+								</svg>
+								<span class="card__text">Завтрак и ужин</span>
+							</div>
+							<div class="card__item">
+								<svg class="card__svg card__svg_special">
+									<use xlink:href="@symbol#card__bus"></use>
+								</svg>
+								<span class="card__text">Внедорожник</span>
+							</div>
+
+						</div>
+
+						<form>
+							<div class="card__choice-mount">
+								<span class="card__subtitle">Выбеоите горы</span>
+
+								<label class="card__check">
+									<input class="card__radio card__altai" type="radio" name="mount">
+									<span class="card__mount-name">Алтайские горы, Горно-Алтайск</span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__swed" type="radio" name="mount">
+									<span class="card__mount-name">Швейцарские Альпы, Кран-Монтана </span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__china" type="radio" name="mount" checked>
+									<span class="card__mount-name">Китайские Гималаи, Тибет</span>
+								</label>
+							</div>
+
+							<div class="card__days">
+								<div class="card__day">
+									<span class="card__subtitle">Количество дней</span>
+									<div class="card__day-value">
+										<div class="card__change card__minus card__change_unactive">&minus;</div>
+										<input name="days" type="text" class="card__value" value="1" readonly />
+										<div class="card__change card__plus">&plus;</div>
+									</div>
+									<input type="submit" class="button button_mount-form" value="Оставить заявку">
+
+								</div>
+
+							</div>
+						</form>
+
+						<!-- CARD #3 -->
+					</div>
+					<div class="card card__econom">
+						<div class="card__bar">
+							<span class="card__title card__title_l">Эконом</span>
+							<span class="card__title card__price"><span class="card__price-value">2 000</span> &#x20bd/сутки </span>
+						</div>
+
+						<img class="card__img" src="@card/econom.jpg" alt="Премиум">
+
+						<div class="card__advantages">
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__house"></use>
+								</svg>
+								<span class="card__text">Палатка под открытым небом</span>
+							</div>
+							<div class="card__item">
+								<svg class="card__svg">
+									<use xlink:href="@symbol#card__cutlery"></use>
+								</svg>
+								<span class="card__text">Еда на костре</span>
+							</div>
+							<div class="card__item">
+								<svg class="card__svg card__svg_special">
+									<use xlink:href="@symbol#card__bus"></use>
+								</svg>
+								<span class="card__text">Горные велосипеды</span>
+							</div>
+
+						</div>
+
+						<form>
+							<div class="card__choice-mount">
+								<span class="card__subtitle">Выбеоите горы</span>
+
+								<label class="card__check">
+									<input class="card__radio card__altai" type="radio" name="mount" checked>
+									<span class="card__mount-name">Алтайские горы, Горно-Алтайск</span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__swed" type="radio" name="mount">
+									<span class="card__mount-name">Швейцарские Альпы, Кран-Монтана </span>
+								</label>
+
+								<label class="card__check">
+									<input class="card__radio card__china" type="radio" name="mount">
+									<span class="card__mount-name">Китайские Гималаи, Тибет</span>
+								</label>
+							</div>
+
+							<div class="card__days">
+								<div class="card__day">
+									<span class="card__subtitle">Количество дней</span>
+									<div class="card__day-value">
+										<div class="card__change card__minus card__change_unactive">&minus;</div>
+										<input name="days" type="text" class="card__value" value="1" readonly />
+										<div class="card__change card__plus">&plus;</div>
+									</div>
+									<input type="submit" class="button button_mount-form" value="Оставить заявку">
+
+								</div>
+
+							</div>
+						</form>
+
+
 					</div>
 				</div>
-				
 			</div>
-		
 		</div>
-
-
 	</main>
-	<!-- BEMGO:scripts -->
+	<footer class="footer footer_theme_mount" id="footer">
 
+		<div class="container">
+			<div class=footer__wrap>
+				<div class="feedback">
+					<h1 class="feedback__title">Захотели в горы ?</h1>
+					<h2 class="feedback__subtitle">Оставьте данные, и мы свяжемся
+						с Вами в течение 15 минут</h2>
+					<form class="feedback__form">
+						<label class="feedback__label">
+							<img class="feedback__img" src="@feedback/user.png" alt="Пользователь">
+							<input type="text" class="feedback__user-info" placeholder="Ваше Имя" required>
+						</label>
+						<label class="feedback__label">
+							<img class="feedback__img" src="@feedback/phone.png" alt="Телефон">
+							<input type="text" class="feedback__user-info" placeholder="Ваш телефон" required>
+						</label>
+						<input type="submit" class="button button_feedback-form" value="Оставить заявку">
+						<label class="feedback__consent">
+							<input type="checkbox" class="feedback__radio" checked required>
+							<div class="feedback__text">
+								<span>Я даю согласие на обработку персональных данных и соглашаюсь с <a
+										class="feedback__link" href="#">политикой конфиденциальности</a>
+								</span>
+							</div>
+						</label>
+					</form>
+				</div>
+
+				<div class="contacts contacts_pos">
+
+					<div class="logo logo_size_l">
+						<svg class="logo__img logo__img_size_l">
+							<use xlink:href="@symbol#logo__logo"></use>
+						</svg>
+					</div>
+					<span class="contacts__title">Горные туры в Алтай, Альпы и Гималаи</span>
+					<span class="contacts__details">Телефон: <a href="#" class="contacts__link">+7(874)
+							413-42-46</a></span>
+					<span class="contacts__details">e-mail: <a href="#"
+							class="contacts__link">forvardtoor@gmail.ru</a></span>
+					<span class="contacts__subtitle">Мы в социальных сетях</span>
+
+					<div class="social social_contacts">
+						<a href="https://vk.com/web_dispute" target="_blanck">
+							<svg class="social__img social__img_contacts social__vk social__vk_contacts">
+								<use xlink:href="@symbol#social__vk"></use>
+							</svg>
+						</a>
+						<a href="#tg" target="_blanck">
+							<svg class="social__img social__img_contacts social__tg social__tg_contacts">
+								<use xlink:href="@symbol#social__telegram"></use>
+							</svg>
+						</a>
+						<a href="#inst" target="_blanck">
+							<svg class="social__img social__img_contacts social__inst social__inst_contacts">
+								<use xlink:href="@symbol#social__instagram"></use>
+							</svg>
+						</a>
+					</div>
+
+					<nav class="nav nav_footer">
+						<div class="nav__wrap">
+							<a href="#main" class="nav__item">Главная</a>
+							<div class="nav__current"></div>
+						</div>
+						<div class="nav__wrap">
+							<a href="#tours" class="nav__item">Туры</a>
+							<div class="nav__current"></div>
+						</div>
+						<div class="nav__wrap">
+							<a href="#footer" class="nav__item">Заявка</a>
+							<div class="nav__current"></div>
+						</div>
+						<div class="nav__wrap">
+							<a href="#footer" class="nav__item">Контакты</a>
+							<div class="nav__current"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup">
+			<div class="popup__wrap">
+				<div class="feedback feedback__template">
+					<svg class="popup__close">
+						<use xlink:href="@symbol#"></use>
+					</svg>
+					<h1 class="feedback__title feedback__title_popup">Отличный выбор!</h1>
+					<h2 class="feedback__subtitle">Оставьте данные, и мы свяжемся
+						с Вами в течение 15 минут</h2>
+					<form class="feedback__form feedback__form_popup">
+						<label class="feedback__label">
+							<img class="feedback__img" src="@feedback/user.png" alt="Пользователь">
+							<input type="text" class="feedback__user-info" placeholder="Ваше Имя" required>
+						</label>
+						<label class="feedback__label">
+							<img class="feedback__img" src="@feedback/phone.png" alt="Телефон">
+							<input type="text" class="feedback__user-info" placeholder="Ваш телефон" required>
+						</label>
+						<input type="submit" class="button button_feedback-form" value="Оставить заявку">
+						<label class="feedback__consent">
+							<input type="checkbox" class="feedback__radio" checked required>
+							<div class="feedback__text">
+								<span>Я даю согласие на обработку персональных данных и соглашаюсь с <a
+										class="feedback__link" href="#">политикой конфиденциальности</a>
+								</span>
+							</div>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- BEMGO:scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 
 </html>

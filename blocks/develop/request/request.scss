@@ -1,0 +1,29 @@
+.request {
+    width: 650px;
+    &_pos {
+        margin-top: 174px;
+    }
+    &__title {
+        margin: 0;
+
+        font-family: lora, serif;
+        font-size: 80px;
+        font-weight: bold;
+        line-height: 100%;
+        letter-spacing: -0.7px;
+    }
+
+    &__text {
+        width: 380px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.25px;
+
+        margin: 0;
+        margin-top: 36px;
+    }
+
+    
+
+}

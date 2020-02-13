@@ -1,0 +1,61 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    width: 125px;
+    height: 20px;
+    
+
+    &_contacts {
+        height: 24px;
+        width: 177px;
+
+        margin-top: 20px;
+    }
+
+    &__img {
+        cursor: pointer;
+        --primary-color: #fff;
+        
+        &:hover {
+            --primary-color: #f69c1c;
+        }
+
+        &_contacts {
+            --primary-color: #132132;
+        }
+    }
+
+    &__vk {
+        height: 16px;
+        width: 29px;
+
+        &_contacts {
+            height: 24px;
+            width: 44px;
+        }
+    }
+
+    &__tg {
+        height: 16px;
+        width: 20px;
+
+        &_contacts {
+            height: 24px;
+            width: 30px;
+        }
+    }
+
+    &__inst {
+        height: 16px;
+        width: 16px;
+
+        &_contacts {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    
+}

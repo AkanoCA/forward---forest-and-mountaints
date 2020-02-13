@@ -1,0 +1,55 @@
+.nav {
+
+	display: flex;
+	justify-content: space-between;
+	width: 427px;
+
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+
+	&_header {
+		position: absolute;
+		left: 407px;
+		top: 42px;
+
+	}
+
+	&_footer {
+		width: 324px;
+		font-size: 12px;
+
+		margin-top: 41px;
+	}
+
+	&__wrap {
+		position: relative;
+
+		&:hover {
+			.nav__current {
+				background-color: #f69c1c;
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+		text-decoration: none;
+		color: #132132;
+		z-index: 10;
+		padding: 0 5px;
+
+	}
+
+	&__current {
+		position: absolute;
+		top: 70%;
+		width: 100%;
+		height: 4px;
+		background-color: transparent;
+		border-radius: 4px;
+		z-index: 0;
+	}
+
+
+}

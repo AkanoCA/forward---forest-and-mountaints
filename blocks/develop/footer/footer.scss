@@ -1,0 +1,13 @@
+.footer {
+    height: 727px;
+
+    &_theme_mount {
+        background-position: center center;
+        background-size: contain;
+        background-image: url("img/mount.png");
+    }
+
+    &__wrap {
+        display: flex;
+    }
+}

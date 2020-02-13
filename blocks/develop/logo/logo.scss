@@ -1,0 +1,20 @@
+.logo {
+	height: 21px;
+	width: 102px;
+
+	&__img {
+		@extend .logo;
+
+		&_size_l {
+			height: 30px;
+			width: 150px;
+			
+		}
+	}
+
+	&_size_l {
+		height: 30px;
+		width: 150px;
+		
+	}
+}
